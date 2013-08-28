@@ -1,0 +1,2 @@
+module YuyuesHelper
+end

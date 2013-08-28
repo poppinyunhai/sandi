@@ -1,0 +1,35 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top: 1%">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left"%>
+    </div>
+    <div class="span10">
+      <% @product.each do |p| %>
+        <div class="row">
+          <div class="span2">
+            <%= image_tag p.avatar.url, style: "width: 60px; height: 50px;" %></p> 
+          </div>
+          <div class="span2">
+            产品名称:
+            <%= p.title %>
+          </div>
+          <div class="span2">
+            产品描述:
+            <%= p.content %>
+          </div>
+          <div class="span2">
+            产品分类:
+            <%= Type.find(p.type_id).name %>
+          </div>
+          <div class="span2">
+            <%= link_to "删除", admin_product_path(p), :method => :delete %>
+            <%= link_to 'Edit', :controller => 'admin/products', :action => 'edit', :id => p %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,19 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top:1% ">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left"%>
+    </div>
+    <div class="span10">
+      <%= form_for [:admin, @type],:url => { :controller => '/admin/types', :action => 'update', :id => @type },:html => { :multipart => true } do |p| %>
+        <p>种类名称</p>
+          <%= p.label :name, "名称" %>
+          <%= p.text_field :name %>
+          <%= p.submit "确认", class: "btn btn-primary"%>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+

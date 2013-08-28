@@ -1,0 +1,17 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top: 1%">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left" %>
+    </div>
+    <div class="span10">
+      <h5>最新活动</h5>
+      <%=raw @meet.content %>
+      <p>
+      <%= link_to '更新', edit_admin_meet_path(@meet), class: "btn btn-primary"%>
+      </p>
+    </div>
+  </div>
+</div>
+
+

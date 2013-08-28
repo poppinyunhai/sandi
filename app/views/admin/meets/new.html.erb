@@ -1,0 +1,20 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top:2% ">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left"%>
+    </div>
+    <div class="span10">
+      <h5>发表最新活动</h5>
+      <%= form_for [:admin, @meet] do |m| %>
+          <%= m.kindeditor :content %>
+          <p></p>
+          <%= m.submit "保存", class: "btn btn-primary"%>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+

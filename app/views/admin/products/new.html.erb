@@ -1,0 +1,25 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top:2% ">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left"%>
+    </div>
+    <div class="span10">
+      <%= form_for [:admin, @product],:html => { :multipart => true } do |p| %>
+        <p>产品种类</p>
+          <%= p.select :type_id, Type.all.map { |c| [c.name, c.id] }%>
+          <%= p.label :title, "标题" %>
+          <%= p.text_field :title %>
+          <%= p.label :content, "描述" %>
+          <%= p.text_area :content , class: "span8"%>
+          <p></p>
+            <%= p.file_field :avatar %>
+          </p> 
+          <%= p.submit "确认", class: "btn btn-primary"%>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Chakra | Responsive One Page Template</title>   
+
+<meta name="description" content="" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="_include/css/custom.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'YOUR ID']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+  <div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">  
+    
+
+  <div class="container">
+      <div class="row">
+          <div class="span12">
+                <div class="slider-text">
+                    
+                </div>
+            </div>
+        </div>
+    </div>   
+  
+  <div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+          <a id="goUp" href="#home-slider" title="Chakra | Responsive One Page Template">Chakra Template</a>
+        </div>
+        
+        <nav id="menu">
+          <ul id="menu-nav">
+              <li class="current"><a href="#home-slider">首页</a></li>
+                <li><a href="#work">我们的产品</a></li>
+                <li><a href="#about">品牌介绍</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="/arts" class="external">技术</a></li>
+                <li><a href="/mengs" class="external">加盟</a></li>
+                <li><a href="#contact">预约</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+<!-- Big Blockquote -->
+<div class="big-quote page">
+    <div class="container">
+      <%=raw @meet.content%>
+    </div>
+</div>
+<!-- End Big Blockquote -->
+<!-- Our Work Section -->
+<div id="work" class="page">
+  <div class="container">
+      <!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">我们的产品</h2>
+                </div>    
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+        <!-- Portfolio Projects -->
+        <div class="row">
+          <div class="span12">
+              <!-- Filter -->
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                      <li class="type-work">产品分类</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">最新产品</a></li>
+                        <li><a href="#filter" data-option-value=".design">人像</a></li>
+                        <li><a href="#filter" data-option-value=".illustration">卡通</a></li>
+                        <li><a href="#filter" data-option-value=".photography">写真</a></li>
+                        <li><a href="#filter" data-option-value=".video">婚庆</a></li>
+                    </ul>
+                </nav>
+                <!-- End Filter -->
+            </div>
+            
+            <div class="span12">
+              <div class="row">
+                  <section id="projects">
+                      <ul id="thumbs">
+                        <% @product.each do |p| %>
+              <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 design">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                
+                                  <%=link_to raw('<span class="overlay-img"></span><span class="overlay-img-thumb font-icon-search"></span>'),p.avatar.url,class: "hover-wrap fancybox", :'data-fancybox-group' => "gallery", :title => p.title %>
+                                    
+                                                               <!-- Thumb Image and Description -->
+                                <%= image_tag p.avatar.url, :alt => p.content %>
+                            </li>
+                          <!-- End Item Project -->
+                        <% end %>    
+              <!-- Item Project and Filter Name -->
+                         <% @productq.each do |p| %>
+              <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 illustration">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                
+                                  <%=link_to raw('<span class="overlay-img"></span><span class="overlay-img-thumb font-icon-search"></span>'),p.avatar.url,class: "hover-wrap fancybox", :'data-fancybox-group' => "gallery", :title => p.title %>
+                                    
+                                                               <!-- Thumb Image and Description -->
+                                <%= image_tag p.avatar.url, :alt => p.content %>
+                            </li>
+                          <!-- End Item Project -->
+                        <% end %>  
+                          <!-- End Item Project -->
+                            
+              <!-- Item Project and Filter Name -->
+                        <% @productw.each do |p| %>
+              <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 photography">
+                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                
+                                  <%=link_to raw('<span class="overlay-img"></span><span class="overlay-img-thumb font-icon-search"></span>'),p.avatar.url,class: "hover-wrap fancybox", :'data-fancybox-group' => "gallery", :title => p.title %>
+                                    
+                                                               <!-- Thumb Image and Description -->
+                                <%= image_tag p.avatar.url, :alt => p.content %>
+                            </li>
+                          <!-- End Item Project -->
+                        <% end %>  
+                          <!-- End Item Project -->
+                            
+              <!-- Item Project and Filter Name -->
+                      <% @producte.each do |p| %>
+                          <li class="item-thumbs span3 video">
+                              <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                             
+                                  <%=link_to raw('<span class="overlay-img"></span><span class="overlay-img-thumb font-icon-search"></span>'),p.avatar.url,class: "hover-wrap fancybox", :'data-fancybox-group' => "gallery", :title => p.title %>
+                                    
+                                                               <!-- Thumb Image and Description -->
+                                <%= image_tag p.avatar.url, :alt => p.content %>
+                            </li>
+                          <!-- End Item Project -->
+                          <% end %>    
+                        </ul>
+                    </section>
+                    
+              </div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+  <%=raw @brand.content%>
+</div>
+</div>
+<!-- End About Section -->
+
+
+
+<!-- Services Section -->
+<div id="services" class="page-alternate">
+  <div class="container">
+    <%=raw @service.content %> 
+  </div>
+</div>
+<!-- End Services Section -->
+
+<!-- Google Map -->
+<div id="map-area">
+    <%= render "map"%>
+</div>
+<!-- End Google Map -->
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">预约</h2>
+               
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+      <div class="span9">
+          <%= form_for @yuyue do |f| %>
+            <%= f.label :name ,"姓名" %>
+            <%= f.text_field :name %>
+            <%= f.label :email, "E-mail" %>
+            <%= f.text_field :email %>
+            <%= f.label :qq, "QQ" %>
+            <%= f.text_field :qq %>
+            <%= f.label :phone, "联系电话" %>
+            <%= f.text_field :phone %>
+            <p>产品分类</p>
+            <%= f.select :type_id, Type.all.map { |c| [c.name, c.id] }%>
+            <%= f.label :bei, "备注" %>
+            <%= f.text_area :bei, class: "span9"%>
+            <%= f.submit "提交", class: "btn btn-warning"%>
+          <% end %>
+        </div>
+        
+        <div class="span3">
+          <div class="contact-details">
+            <h3>联系我们</h3>
+                <ul>
+                    <li>邮箱：378480605@qq.com</li>
+                    <li>联系电话：13810978592</li>
+                    <li>
+                        联系人：宁晓鹏
+                        </li>
+                        <li>
+                        地址：北京市海淀区文慧园路6号三缔时代科技发展有限责任公司
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Services Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+
+
+<!-- Footer -->
+<footer>
+  <p class="credits">&copy;2013 Chakra. <a href="http://themes.alessioatzeni.com/html/chakra/" title="Chakra | Responsive One Page Template">Chakra Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+  <i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> <!-- Google Map API -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
+</html>

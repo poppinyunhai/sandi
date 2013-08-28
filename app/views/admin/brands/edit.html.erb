@@ -1,0 +1,22 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top:1% ">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left"%>
+    </div>
+    <div class="span10">
+     <h4>更新品牌信息</h4>
+      <div>
+        <%= form_for [:admin, @brand],:url => { :controller => '/admin/brands', :action => 'update', :id => @brand },:html => { :multipart => true } do |f| %>
+          <%= f.kindeditor :content%>
+          <p>
+          <%= f.submit "更新", class: "btn btn-primary"%>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

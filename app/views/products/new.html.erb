@@ -1,0 +1,8 @@
+<%= form_for [:admin, @product] do |p| %>
+  <p>产品种类</p>
+    <%= p.select :type_id, Type.all.map { |c| [c.name, c.id] }%>
+    <%= p.label :title, "标题" %>
+    <%= p.text_field :title %>
+    <%= p.label :content, "描述" %>
+    <%= p.text_area :content %>
+<% end %>

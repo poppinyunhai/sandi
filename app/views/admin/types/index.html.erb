@@ -1,0 +1,20 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top: 1%">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left" %>
+    </div>
+    <div class="span10">
+      <h5>分类名称</h5>
+      <% @type.each do |t| %>
+        <p>
+          <%= t.name %>
+          <%= link_to "删除", admin_type_path(t), :method => :delete %>
+          <%= link_to '更新', :controller => 'admin/types', :action => 'edit', :id => t %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

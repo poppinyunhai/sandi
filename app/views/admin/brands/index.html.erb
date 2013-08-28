@@ -1,0 +1,17 @@
+<%= render "layouts/top"%>
+<div class="container-fluid" style="padding-top: 1%">
+  <div class="row-fluid">
+    <div class="span2">
+      <%= render "layouts/left" %>
+    </div>
+    <div class="span10">
+      <h5>品牌信息</h5>
+      <%=raw @brand.content %>
+      <p>
+      <%= link_to '更新', edit_admin_brand_path(@brand), class: "btn btn-primary"%>
+      </p>
+    </div>
+  </div>
+</div>
+
+
